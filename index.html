@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>결혼합니다 — 준혁 &amp; 서연</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;background:#e9e2d8;color:#3a3230;display:flex;justify-content:center}
+  .wrap{width:100%;max-width:430px;background:#fffdf9;min-height:100vh;box-shadow:0 0 24px rgba(0,0,0,.12)}
+  .cover{background:linear-gradient(180deg,#f7efe4 0%,#efe0d0 55%,#e6cfba 100%);text-align:center;padding:56px 24px 40px;position:relative;overflow:hidden}
+  .cover .d-day-badge{display:inline-block;font-size:12px;letter-spacing:3px;color:#8a6d52;border:1px solid #c9ae8c;border-radius:999px;padding:6px 14px;background:rgba(255,255,255,.6)}
+  .cover h1{font-size:15px;font-weight:500;letter-spacing:4px;color:#8a6d52;margin:22px 0 10px}
+  .cover .names{font-size:32px;font-weight:700;line-height:1.3;letter-spacing:1px}
+  .cover .names span{font-weight:300;color:#8a6d52;font-size:26px}
+  .cover .date{margin-top:14px;font-size:15px;color:#5b4c42;letter-spacing:1px}
+  .cover .place{font-size:13px;color:#8a6d52;margin-top:6px}
+  .photo-frame{width:240px;height:300px;margin:28px auto 0;border-radius:160px 160px 16px 16px;background:linear-gradient(135deg,#d9c3a8,#f3e8d8);border:6px solid #fff;box-shadow:0 12px 30px rgba(138,109,82,.25);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#8a6d52}
+  .photo-frame .big{font-size:56px}
+  .photo-frame small{font-size:12px;margin-top:8px;line-height:1.6}
+  section{padding:48px 28px;text-align:center;border-bottom:1px solid #f0e7da}
+  .label{font-size:12px;letter-spacing:4px;color:#c9ae8c;font-weight:700}
+  h2{font-size:20px;margin:10px 0 18px;font-weight:700}
+  .greet{font-size:15px;line-height:2;color:#5b4c42;white-space:pre-line}
+  .family{margin-top:24px;font-size:15px;line-height:2}
+  .family b{font-size:17px}
+  .btn-row{display:flex;gap:10px;justify-content:center;margin-top:22px}
+  .btn{flex:1;border:1px solid #c9ae8c;background:#fff;color:#6b5847;border-radius:12px;padding:12px 0;font-size:14px;text-decoration:none;font-weight:600}
+  .btn.primary{background:#3a3230;color:#fff;border-color:#3a3230}
+  .count{display:flex;gap:8px;justify-content:center;margin-top:20px}
+  .count div{background:#3a3230;color:#fff;border-radius:12px;width:70px;padding:12px 0}
+  .count div b{font-size:20px;display:block}
+  .count div span{font-size:11px;opacity:.7}
+  .cal{background:#faf6ef;border-radius:16px;padding:20px;margin-top:20px}
+  .cal h3{font-size:16px;margin-bottom:12px}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);font-size:13px;gap:6px;color:#5b4c42}
+  .cal-grid .sun{color:#c96a5a}
+  .cal-grid .today{background:#3a3230;color:#fff;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;margin:0 auto}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px}
+  .gallery div{height:150px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:36px}
+  .venue-box{background:#faf6ef;border-radius:16px;padding:20px;text-align:left;font-size:14px;line-height:1.9;color:#5b4c42;margin-top:16px}
+  .acc{margin-top:14px;text-align:left;background:#fff;border:1px solid #eee0cd;border-radius:12px;padding:14px 16px;font-size:14px}
+  .acc button{float:right;border:1px solid #c9ae8c;background:#faf6ef;border-radius:8px;padding:5px 10px;font-size:12px;cursor:pointer}
+  input,textarea{width:100%;border:1px solid #ddd0bd;border-radius:10px;padding:11px 12px;font-size:14px;margin-top:8px;font-family:inherit}
+  .send{width:100%;background:#3a3230;color:#fff;border:0;border-radius:12px;padding:14px;font-size:15px;font-weight:700;margin-top:12px;cursor:pointer}
+  .msg{background:#faf6ef;border-radius:12px;padding:12px 14px;margin-top:10px;text-align:left;font-size:14px;line-height:1.6}
+  .msg b{font-size:13px}
+  .msg small{color:#999;font-size:12px}
+  footer{padding:36px 24px 60px;text-align:center;font-size:12px;color:#a89a8a;line-height:1.8;background:#f7efe4}
+  .top-img{font-size:13px;color:#8a6d52;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="cover">
+    <div class="d-day-badge">WEDDING INVITATION</div>
+    <h1>결 혼 합 니 다</h1>
+    <div class="names">김준혁 <span>&amp;</span> 이서연</div>
+    <div class="date">2026년 10월 24일 토요일 오후 1시</div>
+    <div class="place">더라움 웨딩홀 3층 라움채플</div>
+    <div class="photo-frame"><div class="big">💍</div><small>웨딩 사진이 들어갈 자리<br>원하시는 사진으로 교체해 드립니다</small></div>
+  </div>
+
+  <section>
+    <div class="label">INVITATION</div>
+    <h2>소중한 분들을 초대합니다</h2>
+    <p class="greet">서로 다른 길을 걸어온 두 사람이
+이제 같은 곳을 바라보며 걷고자 합니다.
+
+기쁨의 순간을 함께해 주신다면
+더없는 축복으로 간직하겠습니다.</p>
+    <div class="family">
+      김성호 · 박미영의 아들 <b>준혁</b><br>
+      이도현 · 최지은의 딸 <b>서연</b>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="tel:010-0000-0000">🤵 신랑에게 연락</a>
+      <a class="btn" href="tel:010-0000-0000">👰 신부에게 연락</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">WHEN</div>
+    <h2>예식 일시</h2>
+    <p style="font-size:15px">2026년 10월 24일 토요일 오후 1시</p>
+    <div class="cal">
+      <h3>10월 October</h3>
+      <div class="cal-grid">
+        <span class="sun">일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+        <span></span><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span>
+        <span class="sun">4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+        <span class="sun">11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+        <span class="sun">18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span><span class="today">24</span></span>
+        <span class="sun">25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+      </div>
+    </div>
+    <div class="count">
+      <div><b id="dd">0</b><span>DAYS</span></div>
+      <div><b id="hh">0</b><span>HOURS</span></div>
+      <div><b id="mm">0</b><span>MIN</span></div>
+      <div><b id="ss">0</b><span>SEC</span></div>
+    </div>
+    <p id="ddayText" style="margin-top:12px;font-size:13px;color:#8a6d52"></p>
+  </section>
+
+  <section>
+    <div class="label">GALLERY</div>
+    <h2>두 사람의 순간</h2>
+    <div class="gallery">
+      <div style="background:#f3e3d3">📷</div>
+      <div style="background:#e8d5c0">💑</div>
+      <div style="background:#efe8dc">🌸</div>
+      <div style="background:#e2d3c2">💒</div>
+    </div>
+    <p style="font-size:12px;color:#a89a8a;margin-top:10px">사진 4장을 보내주시면 이 자리에 넣어드립니다</p>
+  </section>
+
+  <section>
+    <div class="label">LOCATION</div>
+    <h2>오시는 길</h2>
+    <p style="font-size:15px;font-weight:700">더라움 웨딩홀 3층 라움채플</p>
+    <p style="font-size:13px;color:#8a6d52;margin-top:4px">서울 강남구 논현로 123</p>
+    <div class="venue-box">
+      🚇 지하철: 7호선 학동역 5번 출구 도보 5분<br>
+      🚌 버스: 143, 240, 4212 논현동주민센터 하차<br>
+      🚗 주차: 건물 지하 1~3층 2시간 무료
+    </div>
+    <div class="btn-row">
+      <a class="btn primary" href="https://map.naver.com" target="_blank">네이버지도 열기</a>
+      <a class="btn" href="https://map.kakao.com" target="_blank">카카오맵 열기</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">THANK YOU</div>
+    <h2>마음 전하실 곳</h2>
+    <div class="acc">🤵 신랑측 · 김준혁<br><span id="a1">국민 123456-78-901234</span><button onclick="copyAcc('a1')">복사</button></div>
+    <div class="acc">👰 신부측 · 이서연<br><span id="a2">신한 110-123-456789</span><button onclick="copyAcc('a2')">복사</button></div>
+  </section>
+
+  <section>
+    <div class="label">GUESTBOOK</div>
+    <h2>축하 메시지</h2>
+    <input id="gname" placeholder="성함">
+    <textarea id="gmsg" rows="3" placeholder="따뜻한 축하 메시지를 남겨주세요"></textarea>
+    <button class="send" onclick="addMsg()">메시지 남기기</button>
+    <div id="list"></div>
+  </section>
+
+  <footer>준혁 ♥ 서연의 결혼식에 초대합니다<br>문의: 신랑 010-0000-0000 · 신부 010-0000-0000</footer>
+</div>
+<script>
+var target = new Date(2026,9,24,13,0,0);
+function tick(){
+  var now = new Date(); var d = target - now;
+  if(d<0){document.getElementById('ddayText').textContent='저희 결혼했습니다. 축복해 주셔서 감사합니다.';return;}
+  document.getElementById('dd').textContent=Math.floor(d/86400000);
+  document.getElementById('hh').textContent=Math.floor(d%86400000/3600000);
+  document.getElementById('mm').textContent=Math.floor(d%3600000/60000);
+  document.getElementById('ss').textContent=Math.floor(d%60000/1000);
+  document.getElementById('ddayText').textContent='결혼까지 '+Math.floor(d/86400000)+'일 남았습니다';
+}
+setInterval(tick,1000);tick();
+function copyAcc(id){
+  var t=document.getElementById(id).textContent;
+  if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){alert('계좌번호가 복사되었습니다');});}
+  else{var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);alert('복사되었습니다');}
+}
+function loadMsg(){
+  try{var arr=JSON.parse(localStorage.getItem('wed-msg')||'[]');var box=document.getElementById('list');box.innerHTML='';
+  arr.forEach(function(m){var d=document.createElement('div');d.className='msg';d.innerHTML='<b></b> <small></small><br><span></span>';d.querySelector('b').textContent=m.n;d.querySelector('small').textContent=m.d;d.querySelector('span').textContent=m.m;box.appendChild(d);});}catch(e){}
+}
+function addMsg(){
+  var n=document.getElementById('gname').value.trim();var m=document.getElementById('gmsg').value.trim();
+  if(!n||!m){alert('성함과 메시지를 입력해주세요');return;}
+  try{var arr=JSON.parse(localStorage.getItem('wed-msg')||'[]');arr.unshift({n:n,m:m,d:new Date().toLocaleDateString()});localStorage.setItem('wed-msg',JSON.stringify(arr));}catch(e){}
+  document.getElementById('gname').value='';document.getElementById('gmsg').value='';loadMsg();alert('감사합니다. 메시지가 등록되었습니다');
+}
+loadMsg();
+</script>
+</body>
+</html>
